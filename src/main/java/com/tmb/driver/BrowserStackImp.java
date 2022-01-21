@@ -16,8 +16,6 @@ public class BrowserStackImp implements IDriver {
 
     @Override
     public WebDriver getDriver(Map<String,String> map) throws MalformedURLException {
-
-
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         map.forEach(capabilities::setCapability); //it read all the key value from map and store in capabilities
